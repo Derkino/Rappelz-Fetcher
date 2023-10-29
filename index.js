@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
 
+const query_select = require('./query_select');
+
+app.use('/api/get', query_select);
+
 app.get('/', (req, res) => {
   res.send('Rappelz API Initial Commit');
 });
