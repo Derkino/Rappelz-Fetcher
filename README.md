@@ -36,3 +36,16 @@ A simple Rappelz API to get information about the Rappelz Database, built with E
 6. Check the console to be sure the API is running
 
 ## If you have any question, feel free to ask.
+
+## Documentation
+
+### Here is a list of GET query : 
+
+```bash
+Be sure to replace :count by the number of row that you want to display
+```
+
+- /rank/top/level/:count > Select Rank by Level
+- /rank/top/gold/:count > Select Rank by Gold
+- /rank/top/pkc/:count > Select Rank by Pkc
+- /rank/top/arena/:count > Select Rank by Arena Point
