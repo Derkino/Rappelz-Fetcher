@@ -45,7 +45,7 @@ A simple Rappelz API to get information about the Rappelz Database, built with E
 Be sure to replace :count by the number of row that you want to display
 ```
 
-- /rank/top/level/:count > Select Rank by Level
-- /rank/top/gold/:count > Select Rank by Gold
-- /rank/top/pkc/:count > Select Rank by Pkc
-- /rank/top/arena/:count > Select Rank by Arena Point
+```bash /rank/top/level/:count > Select Rank by Level ```
+```bash /rank/top/gold/:count > Select Rank by Gold ```
+```bash /rank/top/pkc/:count > Select Rank by Pkc ```
+```bash /rank/top/arena/:count > Select Rank by Arena Point ```
