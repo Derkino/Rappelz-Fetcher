@@ -45,6 +45,10 @@ A simple Rappelz API to get information about the Rappelz Database, built with E
 Be sure to replace :count by the number of row that you want to display
 ```
 
+```bash
+To use the API : you must put your Host IP before : exemple : 127.0.0.1:3000/rank/top/level/10
+```
+
 ```bash 
 /rank/top/level/:count > Select Rank by Level
 ```
