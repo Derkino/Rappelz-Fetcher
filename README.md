@@ -5,6 +5,9 @@ A simple Rappelz API to get information about the Rappelz Database, built with E
 ## Requirements
 
 - Node.js
+- MSSQL Server with Rappelz Database ( Arcadia, Telecaster, Auth )
+- Port 3000 free ( else you will change it into the index.js )
+- Terminal Knowedge
 
 ## How to Use
 
