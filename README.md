@@ -21,7 +21,7 @@ A simple Rappelz API to get information about the Rappelz Database, built with E
 
 3. Be sure you have Node-JS installed on the Host
 
-4. Go to the Cloned repository folder, then edit your creditential in config.js
+4. Go to the Cloned repository folder, then edit your creditential into the .env file
 
 5. Open a terminal into the cloned repository folder and run
 
@@ -56,4 +56,19 @@ A simple Rappelz API to get information about the Rappelz Database, built with E
 ```
 ```bash
 /rank/top/arena/:count > Select Rank by Arena Point
+```
+
+## Example with a local server :
+
+```bash 
+127.0.0.1:3000/rank/top/level/:count > Select Rank by Level
+```
+```bash 
+127.0.0.1:3000/rank/top/gold/:count > Select Rank by Gold
+```
+```bash
+127.0.0.1:3000/rank/top/pkc/:count > Select Rank by Pkc
+```
+```bash
+127.0.0.1:3000/rank/top/arena/:count > Select Rank by Arena Point
 ```
