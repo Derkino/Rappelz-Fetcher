@@ -23,7 +23,7 @@ A simple Rappelz API to get information about the Rappelz Database, built with E
 
 4. Go to the Cloned repository folder, then edit your creditential into the .env file
 
-## Example of .env
+### Example of .env
 
 - MSSQL_IP=127.0.0.1
 - MSSQL_USER=sa
