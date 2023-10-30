@@ -104,7 +104,7 @@ http://127.0.0.1:3000/api/get/rank/top/arena/:count > Select Rank by Arena Point
 http://127.0.0.1:3000/api/get/rank/top/huntaholic/:count > Select Rank by Huntaholic Point
 ```
 
-#### Example Page
+#### Example Page (using the api) -> /Example/index.html
 
 ![image](https://github.com/Derkino/Rappelz-Fetcher/assets/142783965/eac67c13-5ccc-4417-a2a4-b36f20fae9af)
 
