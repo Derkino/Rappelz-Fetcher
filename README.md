@@ -36,10 +36,10 @@ As you can see this project is in progress, i am working to add Insert Query to 
 - MSSQL_USER=sa
 - MSSQL_PASSWORD=examplepass
 - MSSQL_PORT=1433
-- MSSQL_AUTH=Auth
-- MSSQL_ARCADIA=Arcadia -> (Not implemented)
+- MSSQL_AUTH=Auth -> (Not implemented yet)
+- MSSQL_ARCADIA=Arcadia -> (Not implemented yet)
 - MSSQL_TELECASTER=Telecaster
-- MSSQL_API_KEY=ExampleKeyToUseInsertAndUpdateQueryKEEPITSECRET (Not implemented)
+- MSSQL_API_KEY=ExampleKeyToUseInsertAndUpdateQueryKEEPITSECRET -> (Not implemented yet)
 - RAPPELZ_AUTH_SALT=2011 (Not implemented)
 
 5. Open a terminal into the cloned repository folder and run
