@@ -1,3 +1,5 @@
 Be sure to setup correctly the Node Js etc
 
-THIS MUST BE RUN IN A APACHE SERVER ( xampp or smthing like that )
+Please edit the IP in the file if you are executing it in a Host
+
+This index.html may be hosted in a Apache server
