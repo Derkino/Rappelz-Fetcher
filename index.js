@@ -15,5 +15,5 @@ app.get('/', (req, res) => {
 
 const port = 3000;
 app.listen(port, () => {
-  console.log(`Rappelz Express API version 1.0.0 running on ${port}`);
+  console.log(`\n\n-> Rappelz Express API version 1.0.2 running on ${port} <-\n\n-- Experimental Build : May content bugs, or crash, please report them --\n\n-- If you have any suggestion, feel free to say them ! --`);
 });
