@@ -30,10 +30,10 @@ A simple Rappelz API to GET,Insert or Update informations about the Rappelz Data
 - MSSQL_PASSWORD=examplepass
 - MSSQL_PORT=1433
 - MSSQL_AUTH=Auth
-- MSSQL_ARCADIA=Arcadia
+- MSSQL_ARCADIA=Arcadia -> (Not implemented)
 - MSSQL_TELECASTER=Telecaster
-- MSSQL_API_KEY=ExampleKeyToUseInsertAndUpdateQueryKEEPITSECRET
-- RAPPELZ_AUTH_SALT=2011
+- MSSQL_API_KEY=ExampleKeyToUseInsertAndUpdateQueryKEEPITSECRET (Not implemented)
+- RAPPELZ_AUTH_SALT=2011 (Not implemented)
 
 5. Open a terminal into the cloned repository folder and run
 
@@ -71,6 +71,8 @@ A simple Rappelz API to GET,Insert or Update informations about the Rappelz Data
 ```
 
 ## Example with a local server :
+
+### WARNING : If you want to put this in a real Host you must replace 127.0.0.1 by the IP of the Host and, open the Port 3000 in the firewall
 
 ```bash
 http://127.0.0.1:3000/api/get/test-connection > Test SQL Connection
