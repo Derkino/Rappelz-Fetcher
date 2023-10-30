@@ -2,6 +2,10 @@
 
 A simple Rappelz API to GET,Insert or Update informations about the Rappelz Database, built with Express.
 
+## How its working ?
+
+It's really simple, the api call the Tables of the databases and return a Json with all information, then you just have to use it with a PHP / JS loop :)
+
 - GET Query : ✅
 - Insert Query : ❌
 
