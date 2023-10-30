@@ -19,7 +19,7 @@ As you can see this project is in progress, i am working to add Insert Query to 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Derkino/Rappelz-Fetcher.git
+   git clone https://github.com/Derkino/Rappelz-Fetcher.git ( or download it )
    ```
 
 2. Be sure you have a working MSSQL server on your Host
