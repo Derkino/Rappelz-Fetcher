@@ -59,7 +59,7 @@ router.get('/test-connection', async (req, res) => {
 
 router.get('/rank/top/level/:count', async (req, res) => {
   const query = `
-    SELECT TOP (@count) name, lv, job, pkc, gold, arena_point
+    SELECT TOP (@count) name, lv, job, pkc, gold, arena_point, huntaholic_point
     FROM DBO.Character
     ORDER BY lv DESC
   `;
@@ -68,7 +68,7 @@ router.get('/rank/top/level/:count', async (req, res) => {
 
 router.get('/rank/top/gold/:count', async (req, res) => {
   const query = `
-    SELECT TOP (@count) name, lv, job, pkc, gold, arena_point
+    SELECT TOP (@count) name, lv, job, pkc, gold, arena_point, huntaholic_point
     FROM DBO.Character
     ORDER BY gold DESC
   `;
@@ -77,7 +77,7 @@ router.get('/rank/top/gold/:count', async (req, res) => {
 
 router.get('/rank/top/pkc/:count', async (req, res) => {
   const query = `
-    SELECT TOP (@count) name, lv, job, pkc, gold, arena_point
+    SELECT TOP (@count) name, lv, job, pkc, gold, arena_point, huntaholic_point
     FROM DBO.Character
     ORDER BY pkc DESC
   `;
@@ -86,7 +86,7 @@ router.get('/rank/top/pkc/:count', async (req, res) => {
 
 router.get('/rank/top/arena/:count', async (req, res) => {
   const query = `
-    SELECT TOP (@count) name, lv, job, pkc, gold, arena_point
+    SELECT TOP (@count) name, lv, job, pkc, gold, arena_point, huntaholic_point
     FROM DBO.Character
     ORDER BY arena_point DESC
   `;

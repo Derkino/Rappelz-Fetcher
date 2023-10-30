@@ -1,7 +1,10 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 
 const query_select = require('./query_select');
+
+app.use(cors());
 
 app.use('/api/get', query_select);
 
