@@ -64,7 +64,7 @@ As you can see this project is in progress, i am working to add Insert Query to 
 
 1. Be sure to replace :count by the number of row that you want to display
 
-2. To use the API : you must put your Host IP before : exemple : 127.0.0.1:3000/rank/top/level/10
+2. To use the API : you must put your Host IP before : exemple : 127.0.0.1:3000/api/get/rank/top/level/10
 
 ```bash 
 /rank/top/level/:count > Select Rank by Level
