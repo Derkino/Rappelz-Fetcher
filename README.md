@@ -67,16 +67,16 @@ As you can see this project is in progress, i am working to add Insert Query to 
 2. To use the API : you must put your Host IP before : exemple : 127.0.0.1:3000/api/get/rank/top/level/10
 
 ```bash 
-/rank/top/level/:count > Select Rank by Level
+/api/get/rank/top/level/:count > Select Rank by Level
 ```
 ```bash 
-/rank/top/gold/:count > Select Rank by Gold
+/api/get/rank/top/gold/:count > Select Rank by Gold
 ```
 ```bash
-/rank/top/pkc/:count > Select Rank by Pkc
+/api/get/rank/top/pkc/:count > Select Rank by Pkc
 ```
 ```bash
-/rank/top/arena/:count > Select Rank by Arena Point
+/api/get/rank/top/arena/:count > Select Rank by Arena Point
 ```
 
 ## Example with a local server :
