@@ -23,6 +23,18 @@ A simple Rappelz API to get information about the Rappelz Database, built with E
 
 4. Go to the Cloned repository folder, then edit your creditential into the .env file
 
+## Example of .env
+
+- MSSQL_IP=127.0.0.1
+- MSSQL_USER=sa
+- MSSQL_PASSWORD=examplepass
+- MSSQL_PORT=1433
+- MSSQL_AUTH=Auth
+- MSSQL_ARCADIA=Arcadia
+- MSSQL_TELECASTER=Telecaster
+- MSSQL_API_KEY=ExampleKeyToUseInsertAndUpdateQueryKEEPITSECRET
+- RAPPELZ_AUTH_SALT=2011
+
 5. Open a terminal into the cloned repository folder and run
 
    ```bash
