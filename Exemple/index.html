@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Rankings</title>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container mt-4">
+         <h1 class="text-center">Rankings page with Fayz API</h1>
+         <h3 class="text-center">Ranking by :</h3>
+         <h3 class="text-center" id="trier"></h3>
+         <CENTER>
+         <div class="btn-group mt-3">
+          
+            <button class="btn btn-primary" data-category="Level">Level</button>
+            <button class="btn btn-primary" data-category="Gold">Gold</button>
+            <button class="btn btn-primary" data-category="Pkc">PKC</button>
+            <button class="btn btn-primary" data-category="Arena">Arena</button>
+            <button class="btn btn-primary" data-category="Huntaholic">Huntaholic</button>
+          
+         </div>
+         </CENTER>
+         <div class="mt-4">
+            <table class="table table-bordered">
+               <thead>
+                  <tr>
+                     <th>#</th>
+                     <th>Name</th>
+                     <th>Level</th>
+                     <th>Job</th>
+                     <th>Pk</th>
+                     <th>Gold</th>
+                     <th>Arena</th>
+                     <th>Huntaolic Point</th>
+                  </tr>
+               </thead>
+               <tbody id="rankings">
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script>
+         const baseUrl = 'http://192.168.1.158:3000/api/get/rank/top/';
+         
+         // Function to load and display rankings based on the selected category
+         function loadRankings() {
+             const selectedCategory = document.querySelector('.btn.btn-primary').getAttribute('data-category');
+         
+             fetch(baseUrl + selectedCategory + '/10')
+                 .then(response => response.json())
+                 .then(data => {
+                     if (Array.isArray(data)) {
+                         const rankingsHtml = data.map((entry, index) => {
+                             return `<tr>
+                                 <td>${index + 1}</td>
+                                 <td>${entry.name}</td>
+                                 <td>${entry.lv}</td>
+                                 <td>${entry.job}</td>
+                                 <td>${entry.pkc}</td>
+                                 <td>${entry.gold}</td>
+                                 <td>${entry.arena_point}</td>
+                                 <td>${entry.huntaholic_point}</td>
+                             </tr>`;
+                         }).join('');
+                         document.getElementById('rankings').innerHTML = rankingsHtml;
+                         document.getElementById('trier').innerHTML = selectedCategory;
+                     } else {
+                         document.getElementById('rankings').innerHTML = '<tr><td colspan="3">No data available for this category.</td></tr>';
+                     }
+                 })
+                 .catch(error => {
+                     console.error('Error loading rankings:', error);
+                     document.getElementById('rankings').innerHTML = '<tr><td colspan="3">An error occurred while fetching data.</td></tr>';
+                 });
+         }
+         
+         const categoryButtons = document.querySelectorAll('.btn');
+         categoryButtons.forEach(button => {
+             button.addEventListener('click', (event) => {
+                 categoryButtons.forEach(btn => btn.classList.remove('btn-primary'));
+                 event.target.classList.add('btn-primary');
+                 loadRankings();
+             });
+         });
+         
+         loadRankings();
+      </script>
+   </body>
+</html>
