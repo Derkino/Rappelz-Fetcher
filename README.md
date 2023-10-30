@@ -1,6 +1,6 @@
 # Rappelz-Fetcher
 
-A simple Rappelz API to get information about the Rappelz Database, built with Express.
+A simple Rappelz API to GET,Insert or Update informations about the Rappelz Database, built with Express.
 
 ## Requirements
 
@@ -72,15 +72,23 @@ A simple Rappelz API to get information about the Rappelz Database, built with E
 
 ## Example with a local server :
 
+```bash
+http://127.0.0.1:3000/api/get/test-connection > Test SQL Connection
+```
+
 ```bash 
-127.0.0.1:3000/rank/top/level/:count > Select Rank by Level
+http://127.0.0.1:3000/api/get/rank/top/level/:count > Select Rank by Level
 ```
 ```bash 
-127.0.0.1:3000/rank/top/gold/:count > Select Rank by Gold
+http://127.0.0.1:3000/api/get/rank/top/gold/:count > Select Rank by Gold
 ```
 ```bash
-127.0.0.1:3000/rank/top/pkc/:count > Select Rank by Pkc
+http://127.0.0.1:3000/api/get/rank/top/pkc/:count > Select Rank by Pkc
 ```
 ```bash
-127.0.0.1:3000/rank/top/arena/:count > Select Rank by Arena Point
+http://127.0.0.1:3000/api/get/rank/top/arena/:count > Select Rank by Arena Point
+```
+
+```bash
+http://127.0.0.1:3000/api/get/rank/top/huntaholic/:count > Select Rank by Huntaholic Point
 ```
