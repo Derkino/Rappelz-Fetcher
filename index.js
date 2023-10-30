@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 
-const query_select = require('./query_select');
+const query_select = require('./routes/query_select');
 
 app.use(cors());
 
