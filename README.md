@@ -72,7 +72,7 @@ A simple Rappelz API to GET,Insert or Update informations about the Rappelz Data
 
 ## Example with a local server :
 
-### WARNING : If you want to put this in a real Host you must replace 127.0.0.1 by the IP of the Host and, open the Port 3000 in the firewall
+#### WARNING : If you want to put this in a real Host you must replace 127.0.0.1 by the IP of the Host and, open the Port 3000 in the firewall
 
 ```bash
 http://127.0.0.1:3000/api/get/test-connection > Test SQL Connection
