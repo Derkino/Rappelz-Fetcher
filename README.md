@@ -2,6 +2,11 @@
 
 A simple Rappelz API to GET,Insert or Update informations about the Rappelz Database, built with Express.
 
+- GET Query : ✅
+- Insert Query : ❌
+
+As you can see this project is in progress, i am working to add Insert Query to register a player soon
+
 ## Requirements
 
 - Node.js
@@ -22,6 +27,8 @@ A simple Rappelz API to GET,Insert or Update informations about the Rappelz Data
 3. Be sure you have Node-JS installed on the Host
 
 4. Go to the Cloned repository folder, then edit your creditential into the .env file
+
+### Please, before reporting anything, be sure your env is valid, and all required PORT are opened in the firewall
 
 ### Example of .env
 
