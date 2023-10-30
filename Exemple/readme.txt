@@ -1,1 +1,0 @@
-Be sure to setup correctly the Node Js etc

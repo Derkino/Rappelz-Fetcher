@@ -45,7 +45,7 @@ As you can see this project is in progress, i am working to add Insert Query to 
 5. Open a terminal into the cloned repository folder and run
 
    ```bash
-   npm -i
+   npm i
    ```
 
    ```bash
@@ -53,6 +53,8 @@ As you can see this project is in progress, i am working to add Insert Query to 
    ```
 
 6. Check the console to be sure the API is running
+
+7. To make some test with your website, you must install a Apache server, else, CORS may deny query to the API
 
 ## If you have any question, feel free to ask.
 
@@ -101,3 +103,5 @@ http://127.0.0.1:3000/api/get/rank/top/arena/:count > Select Rank by Arena Point
 ```bash
 http://127.0.0.1:3000/api/get/rank/top/huntaholic/:count > Select Rank by Huntaholic Point
 ```
+
+Thanks for listening.
