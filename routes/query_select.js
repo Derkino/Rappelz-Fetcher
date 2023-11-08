@@ -24,7 +24,7 @@ const executeQuery = async (req, res, query) => {
   const count = req.params.count;
 
   if (!/^\d+$/.test(count)) {
-    return res.status(400).json({ error: 'Invalid count parameter. Must be a number.' });
+    return res.status(400).json({ error: 'Invalid parameter. Must be a number.' });
   }
 
   try {
@@ -98,6 +98,15 @@ router.get('/rank/top/huntaholic/:count', async (req, res) => {
     SELECT TOP (@count) name, lv, job, pkc, gold, arena_point, huntaholic_point
     FROM DBO.Character
     ORDER BY huntaholic_point DESC
+  `;
+  executeQuery(req, res, query);
+});
+
+router.get('/stats/get_job/:count', async (req, res) => {
+  const query = `
+    SELECT COUNT(name) as job_count
+    FROM DBO.Character
+    WHERE job = @count
   `;
   executeQuery(req, res, query);
 });
