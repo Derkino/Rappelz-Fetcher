@@ -111,4 +111,16 @@ router.get('/stats/get_job/:count', async (req, res) => {
   executeQuery(req, res, query);
 });
 
+router.get('/stats/get_all_player/', async (req, res) => {
+  try {
+    const pool = await createConnectionPool();
+    const result = await pool.request().query("SELECT count(name) as Player_Count  from DBO.Character WHERE name NOT LIKE '%@%'");
+    pool.close();
+    res.json(result.recordset);
+  } catch (error) {
+    console.error('Error connecting to the database:', error);
+    res.status(500).json({ error: 'Database connection failed' });
+  }
+});
+
 module.exports = router;

@@ -112,6 +112,10 @@ http://127.0.0.1:3000/api/get/rank/top/huntaholic/:count > Select Rank by Huntah
 http://127.0.0.1:3000/api/get/stats/get_job/:job_ID > Return the number of characters who are (job_id)
 ```
 
+```bash
+http://127.0.0.1:3000/api/get/stats/get_all_player/ > Return the number of created characters
+```
+
 #### Example Page (using the api) -> /Example/index.html
 
 ![image](https://github.com/Derkino/Rappelz-Fetcher/assets/142783965/eac67c13-5ccc-4417-a2a4-b36f20fae9af)
